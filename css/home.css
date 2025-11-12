@@ -1,0 +1,263 @@
+/* ===== ESTILO GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background: linear-gradient(90deg, #ffffff, #e9f2ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #034178;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+  color: #034178;
+}
+
+/* ===== SEÇÃO INTRO ===== */
+.home .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  flex-wrap: wrap;
+  background: #ffffff;
+}
+
+.home .intro .texto {
+  max-width: 500px;
+}
+
+.home .intro h1 {
+  font-size: 2.5em;
+  color: #222;
+}
+
+.home .intro span {
+  color: #034178;
+}
+
+.home .intro p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.home .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #034178;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.home .btn:hover {
+  background: #034178;
+}
+
+/* ===== IMAGEM PRINCIPAL ===== */
+.home .intro .imagem img {
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.sobre {
+  text-align: center;
+  padding: 60px 40px;
+  background: #f4f8ff;
+}
+
+.sobre h2 {
+  color: #034178;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== GALERIA ===== */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card-img {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  padding: 60px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contato h2 {
+  color: #034178;
+  margin-bottom: 20px;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.contato textarea {
+  resize: vertical;
+}
+
+.contato button {
+  background: #034178;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.contato button:hover {
+  background: #034178;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background: #eaeaea;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* ======== LOGO ======== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 85px;           /* Tamanho ajustável da logo */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+/* ======== GALERIA ======== */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Espaço entre os cards */
+  margin-top: 40px;
+}
+
+.card-img {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 50px;
+  width: 400px;  /* 🔹 Aumente a largura (padrão era 250px) */
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+  width: 100%;
+  height: 220px; /* 🔹 Altura da imagem aumentada */
+  object-fit: cover; /* 🔹 Preenche o card proporcionalmente */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-img h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-img p {
+  font-size: 0.95em;
+  color: #555;
+}
+
