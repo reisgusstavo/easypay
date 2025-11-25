@@ -3,29 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Sistema</title>
-  <link rel="stylesheet" href="css/login.css" />
+  <title>EasyPay - Login</title>
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
+  <img class="logo-canto" src="img/logo.png" alt="Logo EasyPay">
   <div class="container">
-    <h1 id="titulo">Login</h1>
 
+    <h1 id="titulo">Login</h1 >
+
+    <!-- FORMULÁRIO DE LOGIN -->
     <form id="loginForm">
       <input type="email" id="email" placeholder="E-mail" required />
       <input type="password" id="senha" placeholder="Senha" required />
       <button type="submit">Entrar</button>
-      <p>Não tem conta? <a href="#" id="linkCadastro">Cadastre-se</a></p>
+
+      <p>Não tem conta? 
+        <a href="#" id="linkCadastro">Cadastre-se</a>
+      </p>
     </form>
 
+    <!-- FORMULÁRIO DE CADASTRO -->
     <form id="cadastroForm" style="display: none;">
       <input type="text" id="nomeCadastro" placeholder="Nome completo" required />
       <input type="email" id="emailCadastro" placeholder="E-mail" required />
       <input type="password" id="senhaCadastro" placeholder="Senha" required />
       <button type="submit">Cadastrar</button>
-      <p>Já tem conta? <a href="#" id="linkLogin">Fazer login</a></p>
+
+      <p>Já tem conta? 
+        <a href="#" id="linkLogin">Fazer login</a>
+      </p>
     </form>
+
   </div>
 
-  <script src="js/login.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
