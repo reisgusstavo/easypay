@@ -8,7 +8,12 @@
 
 body {
   font-family: 'Sarala', sans-serif;
-  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+
+  /* 🔵 Fundo azul + vinheta profissional */
+  background:
+    radial-gradient(circle at center, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%),
+    linear-gradient(135deg, #3533cd, #1a1a6e);
+
   color: #FFF2E7;
 }
 
@@ -41,7 +46,7 @@ header nav button {
 }
 
 header nav button:hover {
-  color: #ECD6C4;
+  color: #d9d9d9;
 }
 
 /* ---------- SEÇÕES PRINCIPAIS ---------- */
@@ -65,7 +70,6 @@ h2 {
   font-family: 'Righteous', cursive;
   font-size: 36px;
   margin-bottom: 10px;
-  border-top: 0.4px solid #FFF2E7;
   padding-top: 20px;
 }
 
@@ -73,7 +77,7 @@ h3 {
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 10px;
-  color: #ECD6C4;
+  color: #d9d9d9;
 }
 
 /* ---------- FORMULÁRIOS ---------- */
@@ -96,8 +100,9 @@ textarea {
   color: #2F2325;
 }
 
+/* 🔘 Botão atualizado para cinza claro */
 button {
-  background-color: #ECD6C4;
+  background-color: #d9d9d9;
   padding: 14px 24px;
   border: none;
   border-radius: 20px;
@@ -108,7 +113,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(236, 214, 196, 0.53);
+  background-color: #bfbfbf; /* cinza mais escuro no hover */
 }
 
 /* ---------- TABELAS ---------- */
@@ -117,7 +122,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background: rgba(255, 242, 231, 0.1);
+  background: rgba(255,255,255,0.06);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -129,21 +134,27 @@ table td {
 }
 
 table th {
-  background: rgba(236, 214, 196, 0.3);
+  background: rgba(255,255,255,0.15);
   font-weight: bold;
 }
 
 table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.08);
 }
 
 table tr:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.04);
 }
 
+/* Botões dentro da tabela */
 table button {
   padding: 8px 12px;
   font-size: 14px;
+  background-color: #d9d9d9;
+}
+
+table button:hover {
+  background-color: #bfbfbf;
 }
 
 /* ---------- REGISTRO DE SERVIÇOS ---------- */
@@ -164,14 +175,19 @@ table button {
 
 #relatorio {
   margin-top: 20px;
-  background: rgba(255, 242, 231, 0.1);
+  background: rgba(255,255,255,0.06);
   padding: 20px;
   border-radius: 12px;
 }
 
+/* Botão PDF */
 #gerarPDF {
-  background-color: #FFF2E7;
+  background-color: #d9d9d9;
   color: #2F2325;
+}
+
+#gerarPDF:hover {
+  background-color: #bfbfbf;
 }
 
 /* ---------- RESPONSIVO ---------- */
